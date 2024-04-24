@@ -1,0 +1,13 @@
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: 'Pixelify Sans';
+}
+
+/* img:hover {
+
+} */
