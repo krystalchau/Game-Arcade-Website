@@ -1,6 +1,6 @@
 
 (function(namespace) {
-	let SCORE_FACTOR = 0.1;
+	const SCORE_FACTOR = 0.1;
 
 	function formatOffset(offset) {
 		return Math.floor(offset * SCORE_FACTOR);

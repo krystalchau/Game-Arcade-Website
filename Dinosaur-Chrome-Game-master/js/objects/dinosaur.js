@@ -20,7 +20,8 @@
 	};
 
 	Dinosaur.prototype.jumpDistanceRemaining = function(offset) {
-		if (this.jumpStart === null) return 0;
+		if (this.jumpStart === null) 
+			return 0;
 		return this.jumpStart + JUMP_DISTANCE - offset;
 	};
 

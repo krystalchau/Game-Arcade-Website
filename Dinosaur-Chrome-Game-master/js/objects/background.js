@@ -1,11 +1,9 @@
 
 (function(namespace) {
 	function generateBits(width, height) {
-		let bits = []; 
-		let x;
-		let y;
-		for (y = height - 10; y <= height; y += 8) {
-			for (x = 0 + rand(0, 100); x <= width; x += rand(100, 200)) {
+		let bits = [];
+		for (let y = height - 10; y <= height; y += 8) {
+			for (let x = 0 + rand(0, 100); x <= width; x += rand(100, 200)) {
 				bits.push({
 					x: x, 
 					y: y, 

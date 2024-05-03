@@ -5,18 +5,18 @@
 	const MAX_TIME_TICK = 1000 / 60;
 	const SCREEN_BUFFER = 50;
 	const GROUND_BUFFER = 10;
-	const SPACE_BAR_CODE = 32;
+	const SPACE_BAR = 32;
 	const MIN_CACTUS_DISTANCE = 400;
+
 	let spacePressed = false;
-	
 	function keydown(e) {
-        if (e.keyCode === SPACE_BAR_CODE) {
+        if (e.keyCode === SPACE_BAR) {
 			spacePressed = true;
         }
     }
 
     function keyup(e) {
-        if (e.keyCode === SPACE_BAR_CODE) {
+        if (e.keyCode === SPACE_BAR) {
 			spacePressed = false;
         }
     }

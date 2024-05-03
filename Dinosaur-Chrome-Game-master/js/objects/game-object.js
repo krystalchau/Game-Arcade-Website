@@ -29,11 +29,11 @@
 	};
 
 	GameObject.prototype.collidesWith = function(that, offset) {
-		let firstList = this.colliders(offset) = i;
-		let secondList = that.colliders(offset) = j;
+		let firstList = this.colliders(offset);
+		let secondList = that.colliders(offset);
 
-		for (i = 0; i < firstList.length; i++) {
-			for (j = 0; j < secondList.length; j++) {
+		for (let i = 0; i < firstList.length; i++) {
+			for (let j = 0; j < secondList.length; j++) {
 				if (collidesWith(firstList[i], secondList[j])) {
 					return true;
 				}
