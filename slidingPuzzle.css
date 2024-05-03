@@ -5,20 +5,6 @@
     }
 }
 
-h1 {
-    padding-top: 1%;
-    font-size: 3em;
-    margin-bottom: 2%;
-}
-
-button {
-    min-width: 7%;
-    border-radius: 8px;
-    background-color: lightblue;
-    font-size: 1.1em;
-    margin: 0.45em;
-    padding: 0.45em;
-}
 
 .center {
     margin-left: auto;
