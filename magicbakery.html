@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="magicbakery.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify Sans|Indie Flower">
+    
+    <title>GAMES!</title>
+
+</head>
+    <body>
+
+        <header class="flex-container">
+            <a href="home.html">
+                <img class="title" src="./Assets/Site Title - 0.png" alt="games!" title="games!">
+            </a>
+        </header>
+        
+        <section>
+            <h2>Magic Bakery</h2>
+            
+            <p> <em>Instructions:</em> Click the cake to gain cake stock it, sell your cake to insatiable 
+                cake connoisseurs, and buy power ups with your earnings to increase your cake output. 
+                How much cake can <strong>you</strong> make? </p>
+            
+            <div class="flex-container">
+                <h1> Cake Stock: <span id="cake-stock" data-cake-stock="0">0</span></h1>
+                <h1> Money: <span id="cake-stock" data-money="0">0</span></h1>
+            </div>
+
+            <div class="flex-container">
+                <div>
+                    <h3>Power Ups</h3>
+                    <article id="power-ups">
+                        <button class="cell" data-multiplier="2" data-description="Your clicks count as 2!" data-cost="50"> +2 </button>
+                        <button class="cell" data-multiplier="10" data-description="Your clicks count as 10!" data-cost="100"> +10</button>
+                        <button class="cell" data-multiplier="100" data-description="Isn't this too much cake?" data-cost="1000"> +100 </button>
+                    </article>
+                </div>
+
+                <div>
+                    <img id="cake" src="./Assets/Game Logo 1.png" alt="magic bakery" title="Magic Bakery">
+                </div>
+                
+                <div>
+                    <h3>Buyers</h3>
+                    <article id="buyers">
+                        <button class="cell" data-wants="25" data-pays="25"> Crumbly </button>
+                        <button class="cell" data-wants="50" data-pays="100"> Cakeston</button>
+                        <button class="cell" data-wants="2000" data-pays="5000"> Frostingberg </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <button onclick="location.href='home.html'" title="Home Button" type="button">home</button>
+
+            <p> <span id="copyright">&copy</span> 2024 by <em>Krystal Chau</em> and <em>Judith Nuno Garcia</em></p>
+        </footer>
+
+        <script src=""></script>
+    </body>
+</html>

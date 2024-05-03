@@ -1,0 +1,51 @@
+
+p {
+    margin: 2% 10%;
+}
+
+h3 {
+    margin-bottom: 3%;
+}
+
+img:not(#title):hover {
+    transition: transform 0.5s;
+    transform: scale(1.3);
+}
+
+.flex-container > h1 {
+    padding: 0px 50px;
+}
+
+#power-ups{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3x3 grid */
+    gap: 10px; /* Space between cells */
+    margin: 20px auto; /* Centering the grid */
+    max-width: 300px; /* Restricting the maximum width of the grid */
+}
+#cake {
+    width: 100%;
+}
+
+#buyers {
+    flex-direction: column;
+    align-items: center;
+}
+
+#power-ups button, #buyers button {
+    border: none;
+    font-size: 25px;
+}
+
+#buyers button {
+    transform: none; 
+}
+
+@media screen and (max-width: 800px) {
+    .flex-container > h1 {
+        margin: 1% 0% 1% 0%;
+    }
+    #cake {
+        width: 70%;
+    }
+}
