@@ -16,14 +16,35 @@ img:not(#title):hover {
     padding: 0px 50px;
 }
 
+.description {
+    font-size: 12;
+}
+
+.cooldown {
+    color: grey;
+}
+
+.display {
+    display: none;
+}
+
+.error {
+    padding: 9.5% 0%;
+
+    color: grey;
+    font-size: 30px;
+}
+
+/* Section Source: tictactoe.css example by Daryl Posnett */
 #power-ups{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates a 3x3 grid */
-    gap: 10px; /* Space between cells */
-    margin: 20px auto; /* Centering the grid */
-    max-width: 300px; /* Restricting the maximum width of the grid */
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px auto;
+    max-width: 300px; 
 }
+
 #cake {
+    margin-top: 10%;
     width: 100%;
 }
 
@@ -41,11 +62,17 @@ img:not(#title):hover {
     transform: none; 
 }
 
+#active {
+    color: cornflowerblue;
+    transform: scale(1.5); 
+}
+
 @media screen and (max-width: 800px) {
     .flex-container > h1 {
         margin: 1% 0% 1% 0%;
     }
     #cake {
+        margin-top: 0%;
         width: 70%;
     }
 }

@@ -27,33 +27,42 @@
             
             <p> <em>Instructions:</em> Click the cake to gain cake stock it, sell your cake to insatiable 
                 cake connoisseurs, and buy power ups with your earnings to increase your cake output. 
-                How much cake can <strong>you</strong> make? </p>
+                How much cake can <strong>you</strong> make? Based on CookieClicker</p>
             
             <div class="flex-container">
                 <h1> Cake Stock: <span id="cake-stock" data-cake-stock="0">0</span></h1>
-                <h1> Money: <span id="cake-stock" data-money="0">0</span></h1>
+                <h1> Money: <span id="money" data-money="0">0</span></h1>
             </div>
 
             <div class="flex-container">
                 <div>
                     <h3>Power Ups</h3>
                     <article id="power-ups">
-                        <button class="cell" data-multiplier="2" data-description="Your clicks count as 2!" data-cost="50"> +2 </button>
-                        <button class="cell" data-multiplier="10" data-description="Your clicks count as 10!" data-cost="100"> +10</button>
-                        <button class="cell" data-multiplier="100" data-description="Isn't this too much cake?" data-cost="1000"> +100 </button>
+                        <button data-multiplier="2" data-description="Your clicks count as 2!" data-cost="50"> +2 </button>
+                        <button data-multiplier="10" data-description="Your clicks count as 10!" data-cost="100"> +10</button>
+                        <button data-multiplier="100" data-description="Isn't this too much cake?" data-cost="1000"> +100 </button>
                     </article>
+                    <p id="power-description" class="display"></p>
+                    <p id="power-cost" class="display"></p>
                 </div>
 
                 <div>
                     <img id="cake" src="./Assets/Game Logo 1.png" alt="magic bakery" title="Magic Bakery">
+                    <p id="no-money" class="display error"> Insufficient funds </p>
                 </div>
                 
                 <div>
                     <h3>Buyers</h3>
                     <article id="buyers">
-                        <button class="cell" data-wants="25" data-pays="25"> Crumbly </button>
-                        <button class="cell" data-wants="50" data-pays="100"> Cakeston</button>
-                        <button class="cell" data-wants="2000" data-pays="5000"> Frostingberg </button>
+                        <button data-cooldown="5" data-wants="25" data-pays="25"> Crumbly </button>
+                        <p class="description"> Wants <span class="wants">25</span> cakes for $<span class="pays">25</span>  </p>
+
+                        <button data-cooldown="10" data-wants="50" data-pays="100"> Cakeston</button>
+                        <p class="description"> Wants <span class="wants">50</span> cakes for $<span class="pays">100</span>  </p>
+
+                        <button data-cooldown="20" data-wants="2000" data-pays="5000"> Frostingberg </button>
+                        <p class="description"> Wants <span class="wants">2000</span> cakes for $<span class="pays">5000</span>  </p>
+
                     </article>
                 </div>
             </div>
@@ -66,6 +75,6 @@
             <p> <span id="copyright">&copy</span> 2024 by <em>Krystal Chau</em> and <em>Judith Nuno Garcia</em></p>
         </footer>
 
-        <script src=""></script>
+        <script src="magicbakery.js"></script>
     </body>
 </html>

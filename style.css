@@ -8,11 +8,7 @@ header {
     padding: 10px 0px 0px 0px;
 }
 
-section {
-    padding: 0px 0px 50px 0px;
-}
-
-footer {
+section footer {
     padding: 0px 0px 50px 0px;
 }
 
@@ -65,7 +61,7 @@ button {
     padding: 5px 10px;
     
     display: block;
-    margin: auto;
+    margin: 10px auto auto auto;
 
     color: black;
     background-color: white;
