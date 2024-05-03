@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="dinostyle.css"> 
+		<link rel="stylesheet" href="../style.css"> 
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify Sans|Indie Flower">
+		
+		<title>GAMES!</title>
+	</head>
+	<body>
+
+        <header class="flex-container">
+            <a href="../home.html">
+                <img id="title" src="../Assets/Site Title - 0.png" alt="games!" title="games!">
+            </a>
+        </header>
+		
+		<h2> Dinosaur Run </h2>
+		<p> Run to the end of the world </p>
+
+		<canvas id="game" height="200" width="800"></canvas>
+		<p class="controls">press space bar to start/restart</p>
+
+        <footer>
+            <button onclick="location.href='../home.html'" title="Home Button" type="button">home</button>
+
+            <p> Code orinally by: <a href="https://github.com/CloudCannon/Dinosaur-Chrome-Game">georgephillips</a> <br>
+				<span id="copyright">&copy</span> 2024 by <em>Krystal Chau</em> and <em>Judith Nuno Garcia</em></p>
+        </footer>
+
+        <script src="js/helpers.js"></script>
+        <script src="js/objects/game-object.js"></script>
+        <script src="js/objects/cactus.js"></script>
+        <script src="js/objects/dinosaur.js"></script>
+        <script src="js/objects/background.js"></script>
+        <script src="js/objects/score.js"></script>
+        <script src="js/game.js"></script>
+        <script>
+        	new Game({
+        		el: document.getElementById("game")
+        	});
+        </script>
+
+	</body>
+</html>

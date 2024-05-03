@@ -1,0 +1,10 @@
+
+body {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.controls {
+	text-align: right;
+	color: grey;
+}

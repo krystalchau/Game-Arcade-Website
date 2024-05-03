@@ -36,7 +36,7 @@ function showPowerDescription(handleHover) {
     cost.classList.remove('display');
 }
 
-function removePowerDescription(handleHover) {
+function removePowerDescription() {
     const description = document.getElementById('power-description');
     const cost = document.getElementById('power-cost');
     
