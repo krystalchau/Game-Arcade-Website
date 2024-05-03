@@ -5,7 +5,7 @@
     }
 }
 
-header {
+h1 {
     padding-top: 1%;
     font-size: 3em;
     margin-bottom: 2%;
@@ -33,30 +33,32 @@ button {
     width: 30%;
     background-color: lightpink;
     aspect-ratio: 1/1;
-    box-shadow: 0px 0px 4px;
     display: flex;
+    justify-content:space-around;
     flex-wrap: wrap;
 }
 
 #puzzleBoard {
     width: 100%;
     aspect-ratio: 1/1;
-    background-color: lightblue;
     align-items: center;
+    align-content: space-evenly;
 }
 
 
 .tile {
+    display: inline-flex;;
+    align-items: center;
+    align-content: space-around;
     font-size: 10vh;
-    width:32%;
-    height: 32%;
+    width: 30%;
     aspect-ratio: 1 / 1;
-    border: thin solid white;
+    border:thin solid white;
     align-content: center;
     background-color: lightpink;
     cursor: pointer;
-    left: 0;
-    top:0;
+    top: 0;
+    left:0;
 }
 
 #tile-empty {

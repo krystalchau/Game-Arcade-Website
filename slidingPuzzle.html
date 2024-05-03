@@ -3,12 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="slidingPuzzle.css">
         <title> Sliding Puzzle - Game Arcade</title>
     </head>
 
     <body>
-        <header class="center">Sliding Puzzle</header>
+        <header class="flex-container">
+            <a href="home.html">
+                <img id="title" src="./Assets/Site Title - 0.png" alt="games!" title="games!">
+            </a>
+        </header>
+        <h1 class="center">Sliding Puzzle</h1>
 
         <div class="center">
             <button id="newGame">New Game</button>
@@ -29,9 +35,13 @@
         </div>
 
 
+        
         <footer>
+            <button onclick="location.href='home.html'" title="Home Button" type="button">home</button>
 
+            <p> <span id="copyright">&copy</span> 2024 by <em>Krystal Chau</em> and <em>Judith Nuno Garcia</em></p>
         </footer>
+
         <script src="slidingPuzzle.js"></script>
     </body>
 </html>
