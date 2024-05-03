@@ -1,13 +1,115 @@
 
-header {
+.flex-container {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: center;
+}
+  
+.flex-container > div {
+    padding: 0% 5%;
+}
+
+.flex-container div > img {
+    width: 75%;
+}
+
+@media screen and (max-width: 630px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-container > div {
+        width: 100%;
+        margin: 1% 5%;
+    }
+    .flex-container > div > p {
+        margin: 7%;
+    }
+}
+
+section {
+    padding: 0px 0px 50px 0px;
+}
+
+footer {
+    padding: 0px 0px 50px 0px;
+}
+
+h1 {
+    font-family: 'Indie Flower';
+    text-align: center;
+    font-size: 32px;
 }
 
 p {
     font-family: 'Pixelify Sans';
+    text-align: center;
+    font-size: 18px;
 }
 
-/* img:hover {
+span {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Pixelify Sans';
+    font-size: 18px;
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.title {
+    width: 90%;
+}
+
+img.title:hover {
+    content: url("./Assets/Site Title - 1.png");
+}
+
+/* img.ad {
+    max-width: auto;
+    height: 100%;
+}
+
+img.ad:hover {
+    content: url("./Assets/Vertical Fake Ad - 1.png");
 } */
+
+img:not(.title, .ad):hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 5px 10px;
+    
+    display: block;
+    margin: auto;
+
+    color: black;
+    background-color: white;
+
+    border: dashed;
+    border-radius: 20px;
+
+    font-family: 'Pixelify Sans';
+    font-size: 20px;
+    
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+button:hover {
+    color: cornflowerblue;
+    transform: scale(1.5); 
+}
