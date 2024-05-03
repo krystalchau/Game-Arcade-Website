@@ -1,4 +1,6 @@
 
+// Fixed all variables from var -> let or const
+// Separated variaable instantiations
 (function(namespace) {
 	function collidesWith(first, second) {
 		return first.x < second.x + second.width &&

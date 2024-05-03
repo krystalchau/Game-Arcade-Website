@@ -1,4 +1,6 @@
 
+// Fixed all variables from var -> let or const
+// Separated variaable instantiations
 (function(namespace) {
 	const DEFAULT_COLOUR = "#444";
 	const OFFSET_SPEED = 0.4;

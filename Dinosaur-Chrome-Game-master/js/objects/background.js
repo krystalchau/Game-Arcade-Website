@@ -1,4 +1,7 @@
 
+
+// Fixed all variables from var -> let or const
+// Separated variaable instantiations
 (function(namespace) {
 	function generateBits(width, height) {
 		let bits = [];

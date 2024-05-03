@@ -1,4 +1,7 @@
 
+// Fixed all variables from var -> let or const
+// Separated variaable instantiations
+// Compile if statments with the same conditions
 (function(namespace) {
 	const STEP_SPEED = 0.02;
 	const JUMP_DISTANCE = 350;

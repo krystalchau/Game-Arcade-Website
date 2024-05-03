@@ -1,4 +1,6 @@
 
+// Fixed all variables from var -> let or const
+// Separated variaable instantiations
 (function(namespace) {
 	function Cactus(options) {
 		this.scale = options.scale;
