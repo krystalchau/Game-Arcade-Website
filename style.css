@@ -1,33 +1,4 @@
 
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-}
-  
-.flex-container > div {
-    padding: 0% 5%;
-}
-
-.flex-container div > img {
-    width: 75%;
-}
-
-@media screen and (max-width: 630px) {
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .flex-container > div {
-        width: 100%;
-        margin: 1% 5%;
-    }
-    .flex-container > div > p {
-        margin: 7%;
-    }
-}
-
 section {
     padding: 0px 0px 50px 0px;
 }
@@ -90,6 +61,10 @@ img:not(.title, .ad):hover {
     transform: scale(1.1);
 }
 
+a img {
+    width: 70%;
+}
+
 button {
     padding: 5px 10px;
     
@@ -112,4 +87,42 @@ button {
 button:hover {
     color: cornflowerblue;
     transform: scale(1.5); 
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+  
+.flex-container > div {
+    width: 50%;
+    margin: 0% 5%
+}
+
+.flex-container > div > p {
+    margin: 5%;
+}
+
+.flex-container div > img {
+    width: 75%;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-container > div {
+        width: 100%;
+        margin: 1% 5%;
+    }
+    .flex-container > div > p {
+        margin: 10%;
+    }
+
+    a img {
+        width: 50%;
+    }
 }
